@@ -1,0 +1,7 @@
+// These are options being used
+useCSV='n'
+
+// These aren't used yet
+defaultNodeUrl='localhost'
+defaultBrowser='firefox'
+defaultTimeout='10'

@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="EnvSmokeTest">
+	<test name="env">
+		<classes>
+			<class name="env.CheckSelenium" />
+			<class name="env.CheckIfAppIsUp" />
+			<class name="env.IntentionalFail" />
+		</classes>
+	</test>
+</suite>
