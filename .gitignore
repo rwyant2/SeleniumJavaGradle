@@ -60,3 +60,8 @@ local.properties
 /target/
 /out/
 /test-output/
+/.classpath
+/.project
+/gradlew
+/gradlew.bat
+/settings.gradle

@@ -1,0 +1,68 @@
+nodeOS,nodeURL,browser,timeout
+
+//todo:
+//install grid on linux node right
+
+// regression testing fun tiems
+// happy path on grid
+win10,192.168.0.11,chrome,10 
+win10,192.168.0.11,firefox,11
+win10,192.168.0.11,ie,12
+
+win7,192.168.0.13,chrome,13
+win7,192.168.0.13,firefox,14
+win7,192.168.0.13,ie,15
+
+// happy path on localhost
+linux,localhost,chrome,16
+linux,localhost,firefox,17
+linux,127.0.0.1,chrome,18
+linux,127.0.0.1,firefox,19
+
+// no ip addr, should run
+win10,,chrome,20
+win10,,firefox,21
+win10,,ie,22
+
+win7,,chrome,23
+win7,,firefox,24 
+win7,,ie,25
+
+// should skip out
+// bad nodeOS
+booper,192.168.0.12,firefox,26
+
+
+// bad ip address
+linux,dooper,firefox,27
+
+// valid address, but not on grid
+linux,192.168.0.255,firefox,28
+
+// ports unsupported 
+linux,192.168.0.12:123,firefox,29
+
+// numerically silly ip address
+linux,192.168.0.9001,firefox,30
+
+// bad browser
+linux,localhost,pooper,31
+
+// kek
+linux,localhost,ie,32
+
+// bad timeout
+linux,localhost,firefox,vaya con dios
+
+// should be fine, should default to hubOS
+scooper,localhost,firefox,33
+scooper,127.0.0.1,firefox,34
+
+//untested
+//linux,172.23.0.136,chrome,35
+//linux,192.168.0.17,firefox,36
+//linux,192.168.0.17,ie,37
+
+//linux,,chrome,38
+//linux,,firefox,39
+//linux,,ie,40

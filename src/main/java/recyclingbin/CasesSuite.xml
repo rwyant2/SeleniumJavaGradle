@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="everything using testng.xml">
+	<listeners>
+		<listener class-name="cases.SuiteListener" />
+		<listener class-name="cases.TestListener" />
+	</listeners>
+	<test name="text field and check box">
+		<classes>
+			<class name="cases.TextFieldCase" />
+			<class name="cases.CheckBoxCase" />
+		</classes>
+	</test>
+	<test name="everything else">
+		<classes>
+			<class name="cases.RadioButtonCase" />
+			<class name="cases.DropDownCase" />
+			<class name="cases.TextAreaCase" />
+		</classes>
+	</test>
+</suite>
