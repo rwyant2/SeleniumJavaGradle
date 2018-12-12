@@ -288,14 +288,12 @@ public class PapaBless {
 		if (!onGrid && everythingsSwell) {
 			String exeExt = new String();
 			String driverPath = new String();
-//			TODO: make this an option with a default
-//			Ubuntu 18.04 no lieky /webdrivers/ right off the hard drive
 			if(hubOS.equals("linux")) {
 				exeExt = "";
-				driverPath = "/webdrivers/";
+				driverPath = absPath + "/webdrivers/";
 			} else {
 				exeExt = ".exe";
-				driverPath = "C:\\webdrivers\\";
+				driverPath = absPath + "\\webdrivers\\";
 			}
 			switch(browser) {
 			case "firefox":
